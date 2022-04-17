@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(
+    to top left,
+    rgb(204, 131, 57) 0%,
+    rgb(199, 70, 56) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-interface {
+  width: 60%;
+  height: 70%;
+}
+
+.player-1 {
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(255, 255, 255, 0.355);
+}
+
+.player-2 {
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(255, 255, 255, 0.355);
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.584);
+}
+
+.player-winner {
+  background-color: rgba(108, 129, 105, 0.711);
+  color: aliceblue;
+}
+
+.current-score {
+  width: 170px;
+  height: 100px;
+  margin-bottom: 15px;
+  background-color: rgba(204, 194, 193, 0.352);
+}
+
+.current-active-score {
+  background-color: rgba(202, 67, 52, 0.788);
+}
+
+.btn {
+  background-color: rgba(240, 248, 255, 0.574) !important;
+  background: white;
+}
+
+.btn:hover {
+  background-color: rgba(240, 248, 255, 0.892) !important;
+}
+
+.new-game-btn {
+  position: absolute;
+  top: 16vh;
+}
+
+.roll-dice-btn {
+  position: absolute;
+  top: 60vh;
+}
+
+.hold-btn {
+  position: absolute;
+  top: 70vh;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30vh;
+  transform: translateX(-50%);
+  height: 20vh;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .current-score {
+    width: 130px;
+    height: 100px;
+  }
+  .game-interface {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .game-interface {
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .player-one {
+    height: 33%;
+    border-radius: 5px;
+  }
+
+  .player-two {
+    height: 33%;
+    border-radius: 5px;
+  }
+
+  .btn {
+    height: 2rem;
+    font-size: 0.8em !important;
+  }
+  .new-game-btn {
+    top: 36vh;
+  }
+
+  .dice {
+    top: 42vh;
+    height: 10vh;
+  }
+
+  .roll-dice-btn {
+    top: 53.2vh;
+  }
+
+  .hold-btn {
+    position: absolute;
+    top: 59vh;
+  }
+}
+
+.hidden {
+  display: none;
+}
