@@ -91,6 +91,22 @@ body {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 
+@media (max-height: 628px) {
+  html {
+    font-size: 0.65rem;
+  }
+  h4 {
+    margin-top: 1vh !important;
+  }
+  .player-1 {
+    height: 27vh;
+  }
+
+  .player-2 {
+    height: 27vh;
+  }
+}
+
 @media (max-width: 1200px) {
   .current-score {
     width: 130px;
@@ -108,12 +124,12 @@ body {
     height: 90vh;
   }
 
-  .player-one {
+  .player-1 {
     height: 33%;
     border-radius: 5px;
   }
 
-  .player-two {
+  .player-2 {
     height: 33%;
     border-radius: 5px;
   }
